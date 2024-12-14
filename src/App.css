@@ -1,0 +1,314 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+body {
+  background-color: lightblue; 
+  background-image: url('C:\Users\vyask\Downloads\rise111image.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  margin: 0; 
+  height: 100vh; 
+}
+.background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.background::before, .background::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #0066ff; 
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.background::before {
+  top: 10%;
+  left: 5%;
+}
+.background::after {
+  bottom: 10%;
+  right: 5%;
+}
+header{width: 100%; height: 70px; background: white; position: fixed; top:0px; left:0px; z-index: 1000;}
+header .row{margin: 0px !important;}
+header .logo img{width: 45px;}
+header button.rounded-circle{min-width: 40px !important; width: 40px !important; height: 40px !important;}
+
+.main .sidebarWrapper {width: 20%; flex: 0 0 20%; transition: all 0.3s ease-in-out;}
+.main .sidebarWrapper .sidebar{width: 20%; height: 100vh; max-height:calc(100%-70px) ; position: fixed; top: 70px; left: 0px; background: white;}
+
+.main .sidebarWrapper .sidebar ul{margin-bottom: 0px;}
+.main .sidebarWrapper .sidebar ul li{list-style: none;}
+.main .sidebarWrapper .sidebar ul li button{color: black; text-align: left; justify-content: right; border-radius: 0px !important; padding: 12px 15px !important; align-items: center; text-transform: capitalize !important; font-weight: 500;}
+.main .sidebarWrapper .sidebar ul li button .icon{display: flex; align-items: center; justify-content: center; width: 25px; height: 25px ; margin-right: 10px;}
+.main .sidebarWrapper .sidebar ul li button .icon svg{color: black; opacity: 0.7; font-size: 22px;}
+
+.main  .sidebarWrapper .sidebar ul li button .arrow{margin-left: auto; display: flex; align-items: center; justify-content: center; width: 25px; height: 25px;}
+.main .sidebarWrapper .sidebar ul li button:hover{background: white !important;}
+
+.main .content {width: 80%; flex: 0 0 80%;}
+.right-content{padding: 90px 30px;}
+
+
+.dashboardBoxWrapper{gap: 15px; width:100%; flex-wrap: wrap;}
+.dashboardBoxWrapper .dashboardBox{width: 30%; height :270px; background: white;}
+
+.dashboardBoxWrapperRow .box{width:100%; height: 100%; background: blue; }
+
+.claimValue {
+  color: #333;          
+  font-size: 20px;    
+  font-weight: bold;    
+  padding: 10px 0;      
+             
+}
+.ContractValue {
+  color: #2C3E50;         
+  font-size: 16px;         
+  font-weight: 600;       
+  text-transform: capitalize; 
+  padding: 5px;       
+  margin-left: 200px;  
+  text-align: center;      
+}
+.contractButton {
+  background-color: #3498DB; 
+  color: #fff;             
+  font-size: 14px;          
+  font-weight: bold;        
+  padding: 5px 20px;       
+  border: none;            
+  border-radius: 5px;      
+  margin-top: 10px;         
+  cursor: pointer;          
+  transition: background-color 0.3s ease;
+}
+
+.contractButton:hover {
+  background-color: #217DBB; 
+}
+
+.claimButton {
+  background-color: #3498DB; 
+  
+  color: #fff;             
+  font-size: 14px;         
+  font-weight: bold;     
+  padding: 10px 20px;       
+  border: none;            
+  border-radius: 5px;      
+  margin: 5px, 0px, 0px, 80px;         
+  cursor: pointer;          
+  transition: background-color 0.3s ease; 
+}
+
+.claimButton:hover {
+  background-color: #217DBB; 
+}
+.Place {
+  color: #333;          
+  font-size: 20px;      
+  font-weight: bold;    
+  padding: 10px ;     
+         
+}
+.placeInput {
+  width: 100%;                
+  padding: 10px 15px;        
+  font-size: 14px;            
+  border: 1px solid #ccc;     
+  border-radius: 8px;         
+  background-color: #f9f9f9; 
+  color: #6c757d;             
+  margin-top: 10px;          
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.placeInput::placeholder {
+  color: #adb5bd;             
+  font-style: italic;         
+}
+
+.placeInput:focus {
+  border: 1px solid #3498db; 
+  outline: none;              
+  background-color: #fff; 
+   
+}
+.radioGroup {
+  display: flex;            
+  gap: 15px;                 
+  align-items: center;       
+}
+
+.radioGroup input[type="radio"] {
+  margin-right: 5px;        
+  accent-color: #3498db;     
+  cursor: pointer;           
+}
+
+.radioGroup label {
+  font-size: 14px;          
+  color: #6c757d;          
+  cursor: pointer;           
+}
+
+.radioGroup input[type="radio"]:checked + label {
+  font-weight: bold;      
+}
+.Language {
+  color: #333;         
+  font-size: 20px;    
+  font-weight: bold;   
+  padding: 10px 0;      
+         
+}
+
+.uploadBox {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  margin-top: 20px;         
+  padding: 20px;            
+  border: 2px solid #007bff; 
+  border-radius: 10px;      
+  width: 300px;            
+  height: 100px;            
+  background-color: #f8f9fa;
+}
+
+.uploadButton {
+  display: block;           
+  padding: 10px 20px;       
+  background-color: #007bff; 
+  color: white;             
+  font-size: 16px;         
+  font-weight: bold;       
+  text-align: center;       
+  border-radius: 5px;       
+  cursor: pointer;        
+  width: 100%;              
+  box-sizing: border-box;  
+}
+
+.uploadButton:hover {
+  background-color: #0056b3; 
+}
+
+.fileInput {
+  display: none;            
+}
+
+.uploadBox {
+  display: flex;
+  flex-direction: column;  
+  justify-content: flex-end;  
+  align-items: center;      
+  margin-top: 20px;         
+  padding: 20px;            
+  border: 2px solid #007bff; 
+  border-radius: 10px;     
+  width: 300px;             
+  height: 200px;            
+  background-color: #f8f9fa; 
+}
+
+.uploadButton {
+  display: block;           
+  padding: 10px 20px;     
+  background-color: #007bff; 
+  color: white;            
+  font-size: 16px;          
+  font-weight: bold;      
+  text-align: center;       
+  border-radius: 5px;       
+  cursor: pointer;        
+  width: 100%;             
+  box-sizing: border-box;   
+  margin-bottom: 15px;      
+}
+
+.uploadButton:hover {
+  background-color: #0056b3; 
+}
+
+.fileInput {
+  display: none;          
+}
+
+.uploadBox input[type="file"] {
+  display: none;            
+}
+
+.dashboardBox {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: center; 
+  height: 100%;           
+  text-align: center;    
+}
+
+.contractButton {
+  background-color: #3498DB; 
+  color: #fff;             
+  font-size: 14px;          
+  font-weight: bold;      
+  padding: 10px 20px;       
+  border: none;             
+  border-radius: 5px;       
+  margin-top: 10px;         
+  cursor: pointer;          
+  transition: background-color 0.3s ease; 
+}
+
+
+
+
+
+
+
